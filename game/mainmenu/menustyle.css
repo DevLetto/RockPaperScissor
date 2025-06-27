@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Coiny&family=Luckiest+Guy&display=swap');
+
+:root {
+    --cor1: #4B64F2;
+    --cor2: #F24B4B;
+    --cor3: #3DF28D;
+    --cor4: #F2E41B;
+    --cor5: #FFDAB9;
+    --cor6: #993FBF;
+}
+
+
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Luckiest Guy', cursive;
+    /* background-image: linear-gradient(to left, rgb(236, 66, 95), var(--cor3)); */
+    background-color: var(--cor5);
+}
+
+header{
+    margin:  0 auto;
+    display: flex;
+    /* border: 5px solid pink; */
+    height: 400px;
+    justify-content: center;
+    
+    
+}
+
+.container{
+    /* border: 5px solid blue; */
+    align-self: center;
+    text-align: center;
+
+}
+
+
+h1{
+    font-size: 5em;
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+#rock {
+    color: #276833;
+}
+
+#paper {
+    color: #8f1816;
+}
+
+#scissor {
+    color: #134670;
+}
+
+.titleimg{
+    margin: 0;
+    align-items: center;
+    /* background-color: black; */
+    height: 200px;
+}
+
+img {
+   width: 400px;
+}
+
+main{
+    /* border: 5px solid red; */
+    height: 400px;
+    padding-top: 80px;
+    
+}
+
+.btnsContainer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    /* border: 5px solid purple; */
+}
+
+.button {
+    height: 100px;
+    width: 500px;
+    margin: 20px;
+    font-size: 2em;
+    font-family: 'Sriracha', cursive;
+    border-radius: 20px;
+    background-color: var(--cor1);
+    color: white;
+    transition: 1s;
+}
+
+.button:hover{
+    font-size: 2.5em;
+    cursor: pointer;
+}
+
+footer {
+    text-align: center;
+}
