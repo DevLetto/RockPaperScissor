@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Coiny&family=Luckiest+Guy&display=swap');
+
+:root {
+    --cor1: #4B64F2;
+    --cor2: #F24B4B;
+    --cor3: #3DF28D;
+    --cor4: #F2E41B;
+    --cor5: #FFDAB9;
+    --cor6: #993FBF;
+}
+
+
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Luckiest Guy', cursive;
+    /* background-image: linear-gradient(to left, rgb(236, 66, 95), var(--cor3)); */
+    background-color: var(--cor5);
+}
+
+.exit{
+    height: 50px;
+    width: 50px;
+    background-color: var(--cor2);
+    color: white;
+    font-size: 2em;
+    border-radius: 20px;
+    transition: 1s;
+
+}
+
+.exit:hover {
+    font-size: 2.5em;
+    cursor: pointer;
+}
+
+main{
+    height: 93vh;
+    position: relative;
+    
+}
+
+img{
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    
+}
