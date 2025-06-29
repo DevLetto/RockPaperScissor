@@ -1,1 +1,46 @@
-html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Playgame</title>
+</head>
+<body>
+    <header>
+        <div class="leaveContainer">
+            <a href="/game/mainmenu/mainmenu.html"><input type="button" value="<" class="exit"></a>
+        </div>
+
+        <div class="scoreContainer">
+            <input type="text" value="o" readonly class="score rScore">
+            <input type="text" value="o" readonly class="score yScore">
+        </div>
+    </header>
+
+    <main>
+        <section class="gameContainer">
+            <article class="handBox rightHandBox">
+                <div class="rightHand">
+                    <img src="/game/imagens/Mao fechada.png" alt="">
+                </div>
+            </article>
+
+            <article class="handBox leftHandBox">
+                <div class="leftHand">
+                    <img src="/game/imagens/Mao fechada.png" alt="closed hand" >
+                </div>
+            </article>
+
+        </section>
+        <section class="selectContainer">
+            <article class="select">
+                <button type="button" class="btn rockBtn"><img src="/game/imagens/greenClosedHand.png" alt=""></button>
+                <button type="button" class="btn rockBtn"><img src="/game/imagens/redOpenHand.png" alt=""></button>
+                <button type="button" class="btn rockBtn"><img src="/game/imagens/blueScissorHand.png" alt=""></button>
+            </article>
+        </section>
+    </main>
+    
+</body>
+</html>
