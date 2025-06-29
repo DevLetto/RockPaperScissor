@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="playstyle.css">
     <title>Playgame</title>
 </head>
 <body>
@@ -13,8 +13,8 @@
         </div>
 
         <div class="scoreContainer">
-            <input type="text" value="o" readonly class="score rScore">
-            <input type="text" value="o" readonly class="score yScore">
+            <input type="text" value="o" readonly disabled class="score rScore">
+            <input type="text" value="o" readonly disabled class="score yScore">
         </div>
     </header>
 
@@ -22,25 +22,29 @@
         <section class="gameContainer">
             <article class="handBox rightHandBox">
                 <div class="rightHand">
-                    <img src="/game/imagens/Mao fechada.png" alt="">
+                    <img src="/game/imagens/Mao fechada.png" class="handImg righHandImg" alt="closed hand">
                 </div>
             </article>
 
             <article class="handBox leftHandBox">
                 <div class="leftHand">
-                    <img src="/game/imagens/Mao fechada.png" alt="closed hand" >
+                    <img src="/game/imagens/Mao fechada.png" class="handImg leftHandImg" alt="closed hand" >
                 </div>
             </article>
 
         </section>
         <section class="selectContainer">
             <article class="select">
-                <button type="button" class="btn rockBtn"><img src="/game/imagens/greenClosedHand.png" alt=""></button>
-                <button type="button" class="btn rockBtn"><img src="/game/imagens/redOpenHand.png" alt=""></button>
-                <button type="button" class="btn rockBtn"><img src="/game/imagens/blueScissorHand.png" alt=""></button>
+                <button type="button" class="btn rockBtn" onclick="playRock()"><img src="/game/imagens/greenClosedHand.png" alt="Circle with a green background and a closed hand image"></button>
+
+                <button type="button" class="btn rockBtn" onclick="playPaper()"><img src="/game/imagens/redOpenHand.png" alt="Circle with a red backgrond and a opened hand image"></button>
+
+                <button type="button" class="btn rockBtn" onclick="playScissor()"><img src="/game/imagens/blueScissorHand.png" alt="circle with a blue background and a hand making a scissor image"></button>
             </article>
         </section>
     </main>
+
+    <script src="script.js"></script>
     
 </body>
 </html>

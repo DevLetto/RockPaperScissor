@@ -92,6 +92,7 @@ main{
     font-size: 2em;
     font-family: 'Sriracha', cursive;
     border-radius: 20px;
+    border: 1px solid black;
     background-color: var(--cor1);
     color: white;
     transition: 1s;
