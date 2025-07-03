@@ -86,7 +86,6 @@ header {
 
 .counterContainer{
     order: 2;
-    background-color: red;
     text-align: center;
     height: 200px;
     width: 200px;
@@ -108,7 +107,6 @@ header {
     font-size: 10em;
     color: black;
     text-align: center;
-    background-color: #3DF28D;
 }
 
 #startBtn{
@@ -130,6 +128,19 @@ header {
     width: 800px;
     display: flex;
     justify-content: end;
+}
+
+.animation {
+    animation: balancar 0.3s infinite alternate;
+}
+
+@keyframes balancar {
+    from {
+        transform: rotate(-10deg);
+    }
+    to {
+        transform: rotate(10deg);
+    }
 }
 
 .handImg{
