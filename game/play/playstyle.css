@@ -130,7 +130,20 @@ header {
     justify-content: end;
 }
 
-.animation {
+.leftHandImg .animation {
+    animation: balancar 0.3s infinite alternate;
+}
+
+@keyframes balancar {
+    from {
+        transform: rotate(-10deg);
+    }
+    to {
+        transform: rotate(10deg);
+    }
+}
+
+.rightHandImg .animation {
     animation: balancar 0.3s infinite alternate;
 }
 
