@@ -111,3 +111,35 @@ main{
 footer {
     text-align: center;
 }
+
+@media(max-width: 500px){
+
+    
+
+    header{
+        height: 300px;
+        padding-top: 40px;
+    }
+    img{
+        width: 300px;
+    }
+
+    h1{
+        font-size: 4em;
+    
+    }
+
+    main{
+        height: 300px;
+        padding-top: 40px;
+    }
+    .button{
+        height: 80px;
+        width: 300px;
+    }
+
+    footer{
+        
+        height: 100px;
+    }
+}
