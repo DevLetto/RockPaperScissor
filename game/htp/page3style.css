@@ -54,6 +54,11 @@ img{
     transform: translate(-50%);
     
 }
+@media(orientation: landscape){
+    body{
+        overflow: auto;
+    }
+}
 
 @media (max-width: 450px){
    

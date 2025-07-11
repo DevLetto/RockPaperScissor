@@ -2,7 +2,7 @@
 
 *{
     box-sizing: border-box;
-    padding: 0;
+    padding: 0px;
     margin: 0;
 }
 
@@ -89,7 +89,7 @@ header {
 }
 
 .counterContainer{
-    border: 5px solid turquoise;
+    /* border: 5px solid turquoise; */
     order: 2;
     text-align: center;
     width: 20vw;
@@ -106,7 +106,7 @@ header {
     font-size: 7vw;
     color: var(--cor2);
     text-align: center;
-    border: 2px solid brown;
+    /* border: 2px solid brown; */
 }
 
 
@@ -119,17 +119,21 @@ header {
 }
 
 .handBox{
-    border: 5px solid peru;
+    /* border: 5px solid peru; */
     width: 42vw;
     display: flex;
     justify-content: end;
 }
 
+.handDiv{
+    /* border: 3px solid black; */
+    width: 42vw;
+}
 
 .handImg{
     width: 42vw;
     height: 100%;
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 
 
@@ -157,7 +161,7 @@ header {
 
 
 .selectContainer{
-    border: 5px solid brown;
+    /* border: 5px solid brown; */
     height: 12.1vw;
     min-height: 12vw;
     display: flex;
@@ -208,6 +212,87 @@ header {
     opacity: 100%;
     
 }
+
+@media(max-width: 500px){
+
+    .gameContainer{
+        height: 60vh;
+        flex-direction: column;
+    }    
+
+    .handImg{
+    width: 42vw;
+    height: 80%;
+    }
+    
+    .handBox{
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        height: 55vw;
+    }
+
+    .leftHandImg,
+    .rightHandImg{
+        transform: rotate(90deg);
+        
+    }
+
+    
+
+    .animation .leftHandImg{
+    transform-origin: center;
+    animation: cpuShake 0.7s ease infinite;
+    }
+
+    @keyframes cpuShake {
+        50%{
+         transform: translatex(10px);
+        }
+    }
+
+    .animation .rightHandImg{
+        transform-origin: center ;
+        animation: playerShake 0.7s ease infinite;
+    }
+
+    @keyframes playerShake {
+        50%{
+         transform: translateX(-10px);
+        }
+    }
+
+    .counterContainer{
+        width: 100%;
+        height: 21vw;
+        
+    }
+
+    .showRes{
+        font-size: 12vw;
+        
+    }
+
+    .selectContainer{
+        margin-top: 30px;
+        height: 40vw;
+        align-items: center;
+    }
+
+    .select{
+        height: 100%;
+    }
+
+    .btn{
+        width: 100%;
+        height: auto;
+    }
+
+}
+
+
+
+
 
 
 

@@ -32,7 +32,6 @@ optBtns.forEach((img, index) => {
 
         const intervalo = setInterval(() => {
             showRes.textContent = tempo
-            console.log(tempo);
             tempo--;
 
             if(tempo === 0){
