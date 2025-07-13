@@ -19,8 +19,8 @@ optBtns.forEach((img, index) => {
         //add a classe active para que quando apertar o botao ele ficar colorido
         img.classList.add('active')
 
-        playerResult.src = "/game/imagens/Mao fechada invertido.png"
-        cpuResult.src = "/game/imagens/Mao fechada.png"
+        playerResult.src = "../imagens/Mao fechada invertido.png"
+        cpuResult.src = "../imagens/Mao fechada.png"
         showRes.innerHTML = ""
 
         centerContainer.appendChild(showRes); // força o elemento a aparecer no DOM logo
@@ -72,12 +72,12 @@ optBtns.forEach((img, index) => {
 
             })
 
-            let playerHandImgs = ["/game/imagens/Mao fechada invertido.png", "/game/imagens/Mao aberta invertida.png", "/game/imagens/mao tesoura invertido.png"]
+            let playerHandImgs = ["../imagens/Mao fechada invertido.png", "../imagens/Mao aberta invertida.png", "../imagens/mao tesoura invertido.png"]
             playerResult.src = playerHandImgs[index]
 
             let randomNumber = Math.floor(Math.random() * 3)
 
-            let cpuHandImgs = ["/game/imagens/Mao fechada.png", "/game/imagens/Mao aberta.png", "/game/imagens/mao tesoura.png"]
+            let cpuHandImgs = ["../imagens/Mao fechada.png", "../imagens/Mao aberta.png", "../imagens/mao tesoura.png"]
             cpuResult.src = cpuHandImgs[randomNumber]
 
             let cpuValue = ["R", "P", "S"][randomNumber]
