@@ -1,7 +1,7 @@
 # RockPaperScissor
 A simple and responsive rock paper scissor game.
 
-<a href="https://devletto.github.io/RockPaperScissor/game/mainmenu/mainmenu.html">Site Link</a>
+<a href="https://devletto.github.io/RockPaperScissor/game/mainmenu/mainmenu.html" target="_blank" >Site Link</a>
 
 <div align="center">
   <img width="1920" height="961" alt="ImageMenu" src="https://github.com/user-attachments/assets/0c9a2742-aabb-4571-9785-b92533d8fd86" />
