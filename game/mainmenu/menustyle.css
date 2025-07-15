@@ -98,6 +98,10 @@ main{
     transition: 1s;
 }
 
+.button:active{
+    transition: 0s;
+    background-color: #2a388a;
+}
 
 .button:hover{
     font-size: 2.5em;
