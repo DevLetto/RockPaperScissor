@@ -293,12 +293,7 @@ header {
 
 }
 
-@media(orientation: landscape){
-    body{
-        overflow: auto;
-    }
-    
-}
+
 
 
 
